@@ -5,6 +5,8 @@ class UsersController < ApplicationController
   before_filter :username_exists?, only: :show
   
   def show
+    @user = User.find_by_username(params[:username])
+    @twets = Twet.by_user_ids(@user.id)
   end
   
   private
