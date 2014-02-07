@@ -1,6 +1,9 @@
 <div class="col-md-4">
   <ul class="nav nav-pills nav-stacked well text-left">
     <li>
+      <%= image_tag gravatar_url(user) %>
+    </li>
+    <li>
       <%= content_tag :strong, user.name %>
     </li>
     <li>
