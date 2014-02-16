@@ -48,6 +48,9 @@ gem 'devise'
 # Use FFaker for random seed generation: https://github.com/EmmanuelOga/ffaker
 gem 'ffaker'
 
+# Use Figaro to manage environment configuration settings: http://github.com/laserlemon/figaro
+gem 'figaro'
+
 group :development, :test do
   # Use RSpec for testing: https://github.com/rspec/rspec-rails
   gem 'rspec-rails', '~> 2.0'
